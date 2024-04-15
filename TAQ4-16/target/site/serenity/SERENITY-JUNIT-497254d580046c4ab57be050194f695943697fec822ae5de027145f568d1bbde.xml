@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="3" name="org.icrc.hrspace.RCM.JobRequisitionCreationTAQForm" skipped="0" tests="4" time="1954.2" timestamp="2024-04-16 12:12:01"><testcase classname="org.icrc.hrspace.RCM.JobRequisitionCreationTAQForm" name="Complete TAQ job requisition creation and approval"><failure message="expected:&lt;[Test Description 2 ALTS6]&gt; but was:&lt;[Click to add description here]&gt;" type="org.junit.ComparisonFailure">expected:&lt;[Test Description 2 ALTS6]&gt; but was:&lt;[Click to add description here]&gt;</failure><system-err>expected:&lt;[Test Description 2 ALTS6]&gt; but was:&lt;[Click to add description here]&gt;&#13;
+steps.RecruitingSteps.then_the_description_of_the_first_section_should_be(RecruitingSteps.java:1039)&#13;
+steps.RCM.ICRC.JobRequisitionCreationSteps.when_Line_Manager_Edits_and_Reviews_Job_Requisition_Details_Job_Profile(JobRequisitionCreationSteps.java:444)&#13;
+org.icrc.hrspace.RCM.JobRequisitionCreationTAQForm.completeTAQJobRequisitionCreationAndApproval(JobRequisitionCreationTAQForm.java:952)&#13;
+</system-err></testcase><testcase classname="org.icrc.hrspace.RCM.JobRequisitionCreationTAQForm" name="Create and delete TAQ job requisition in pre approved status"/><testcase classname="org.icrc.hrspace.RCM.JobRequisitionCreationTAQForm" name="Create approve and close TAQ job requisition"><failure type="java.lang.AssertionError"/><system-err>null&#13;
+steps.OrganisationInfoSteps.then_the_Send_to_next_step_page_should_show_up(OrganisationInfoSteps.java:89)&#13;
+steps.RCM.ICRC.JobRequisitionCreationSteps.when_the_Line_Manager_send_the_Job_requisition_for_approval(JobRequisitionCreationSteps.java:152)&#13;
+org.icrc.hrspace.RCM.JobRequisitionCreationTAQForm.createApproveAndCloseTAQJobRequisition(JobRequisitionCreationTAQForm.java:458)&#13;
+</system-err></testcase><testcase classname="org.icrc.hrspace.RCM.JobRequisitionCreationTAQForm" name="Create approve and decline TAQ job requisition"><failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError">expected:&lt;false&gt; but was:&lt;true&gt;</failure><system-err>expected:&lt;false&gt; but was:&lt;true&gt;&#13;
+steps.RecruitingSteps.then_the_Job_Requisition_Details_button_should_be_correctly_displayed(RecruitingSteps.java:2402)&#13;
+steps.RecruitingSteps.then_the_buttons_for_Job_Requisition_Details_form_should_be_correctly_displayed(RecruitingSteps.java:2387)&#13;
+steps.RecruitingSteps.then_the_buttons_in_pre_approved_Job_Requisition_Details_for_LM_should_be_correctly_displayed(RecruitingSteps.java:2407)&#13;
+steps.RCM.ICRC.JobRequisitionCreationSteps.when_the_Line_Manager_Edits_and_Reviews_TAQ_Job_Requisition_Details_fields(JobRequisitionCreationSteps.java:326)&#13;
+org.icrc.hrspace.RCM.JobRequisitionCreationTAQForm.createApproveAndDeclineTAQJobRequisition(JobRequisitionCreationTAQForm.java:205)&#13;
+</system-err></testcase></testsuite>
