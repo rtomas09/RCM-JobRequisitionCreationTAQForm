@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Job requisition creation TAQ form","Complete TAQ job requisition creation and approval","FAILURE","2024-04-16T00:12:01.5040695+08:00[Asia/Manila]","0.0","298.21"
+"Job requisition creation TAQ form","Create approve and close TAQ job requisition","FAILURE","2024-04-16T00:21:47.0526864+08:00[Asia/Manila]","0.0","768.3"
+"Job requisition creation TAQ form","Create approve and decline TAQ job requisition","FAILURE","2024-04-16T00:34:36.2793748+08:00[Asia/Manila]","0.0","603.43"

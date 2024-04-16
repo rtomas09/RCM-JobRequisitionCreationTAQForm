@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.19/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Selenium Serenity Tests FAD APPLIC</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="a6c1ef951cef812fb92af7cb1e0d37248fb4d71c1bb1ae8482979bc47595410c.html">Job Requisition Creation ICRC Form</a></span>
+                > <span class="truncate-60"><a
+                    href="56144bd8d5f0ec75e07c8486ff2d290863b31317e3799331a2d017983e9b19ad.html">Complete ICRC job requisition creation and approval </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+        <li >
+            <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-04-2024 10:19</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Job Requisition Creation ICRC Form </span>
+                                    <span class="badge tag-badge" style="">Story</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="error-color">Complete ICRC job requisition creation and approval
+                                    <span class="related-issue-title">(A_1_1, A_1_10, A_1_4, A_1_5, A_1_6, A_1_9, A_2_1, A_2_2, A_2_3, A_2_4, A_2_6, A_3_1, A_3_2, A_3_3, A_3_4, A_3_5, A_3_6)</span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Timeout exception: Expected condition failed: waiting for presence of null (tried for 15 second(s) with 100 milliseconds interval)Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'PCS13944', ip: '192.168.254.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'Driver info: net.thucydides.core.webdriver.WebDriverFacade</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.TimeoutException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>utils.ExplicitWait.explicitlyWaitForPresenceOfElement(ExplicitWait.java:119)<br />pages.GenericPage.clickElement(GenericPage.java:194)<br />pages.RecruitingPage.clickJobTitleFromJobRequisitionsTable(RecruitingPage.java:56)<br />steps.RecruitingSteps.when_I_click_the_requested_Job_position_from_Job_Requisitions_table(RecruitingSteps.java:36)<br />steps.RCM.ICRC.JobRequisitionCreationSteps.when_the_Recruiter_Edits_and_Reviews_Job_Requisition_Details_fields(JobRequisitionCreationSteps.java:1055)<br />org.icrc.hrspace.RCM.JobRequisitionCreationICRCForm.completeICRCJobRequisitionCreationAndApproval(JobRequisitionCreationICRCForm.java:918)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource10803316741289463463.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="772b764cf33d8a27fb40586bae40bcf23989102f04c24ece57af3f0620fcce3f.png" title=" When the Recruiter edits and reviews Job Requisition Details fields (A_3_1)" width="941"/>
+                <img src="772b764cf33d8a27fb40586bae40bcf23989102f04c24ece57af3f0620fcce3f.png" title=" Given that I'm logged in to HR space as 'Clement LOCQUET'" width="941"/>
+                <img src="772b764cf33d8a27fb40586bae40bcf23989102f04c24ece57af3f0620fcce3f.png" title=" Given that I'm logged in to HR space using 'A574512' account" width="941"/>
+                <img src="43b94a147b6010a62f98ddf1df0b80f73f054a2fc55b21a89f39c9a89db30395.png" title=" Given that I'm logged in to HR space using 'A574512' account" width="1931"/>
+                <img src="1a72d43f21e7116696f6ff44e2a552558f0f578ae04a2a17b8f05d7ef54a135f.png" title=" Then user inputs username: A574512" width="1931"/>
+                <img src="a5a9a32e479ef297ef6c96b5874fe36173bac5bf09a44632440ae40be0c971f8.png" title=" Then user inputs username: A574512 (completed)" width="1931"/>
+                <img src="a5a9a32e479ef297ef6c96b5874fe36173bac5bf09a44632440ae40be0c971f8.png" title=" Then user inputs password: nrt2023HRIS#" width="1931"/>
+                <img src="252a4ef9dff879e9af40bf4a118bd33f269e3c5cd729720fc820a6057ccccc2b.png" title=" Then user inputs password: nrt2023HRIS# (completed)" width="1931"/>
+                <img src="252a4ef9dff879e9af40bf4a118bd33f269e3c5cd729720fc820a6057ccccc2b.png" title=" Then user clicks login button" width="1931"/>
+                <img src="8454bbe1b8121683630d55d6cb36f9b1709c1c8228b978d3a65509ac4f4c5c04.png" title=" Then user clicks login button" width="1931"/>
+                <img src="92eadc8530fe7a6096748817a970b7777e01e77a601ef582f3da56e4640c9d69.png" title=" Then user clicks login button (completed)" width="1931"/>
+                <img src="92eadc8530fe7a6096748817a970b7777e01e77a601ef582f3da56e4640c9d69.png" title=" Given that I'm logged in to HR space using 'A574512' account (completed)" width="1931"/>
+                <img src="92eadc8530fe7a6096748817a970b7777e01e77a601ef582f3da56e4640c9d69.png" title=" Given that I'm logged in to HR space as 'Clement LOCQUET' (completed)" width="1931"/>
+                <img src="92eadc8530fe7a6096748817a970b7777e01e77a601ef582f3da56e4640c9d69.png" title=" When i set the module to recruiting" width="1931"/>
+                <img src="92eadc8530fe7a6096748817a970b7777e01e77a601ef582f3da56e4640c9d69.png" title=" When I set the header module to 'Recruiting'" width="1931"/>
+                <img src="fab54de2a3f9bfcbfd1a2f570f2209f5de476ad3c9ea19729996e479bd5ad215.png" title=" When I set the header module to 'Recruiting' (completed)" width="1931"/>
+                <img src="fab54de2a3f9bfcbfd1a2f570f2209f5de476ad3c9ea19729996e479bd5ad215.png" title=" When i set the module to recruiting (completed)" width="1931"/>
+                <img src="fab54de2a3f9bfcbfd1a2f570f2209f5de476ad3c9ea19729996e479bd5ad215.png" title=" Then the job requisition page and its contents to show up" width="1931"/>
+                <img src="fab54de2a3f9bfcbfd1a2f570f2209f5de476ad3c9ea19729996e479bd5ad215.png" title=" Then the job requisition page and its contents to show up (completed)" width="1931"/>
+                <img src="fab54de2a3f9bfcbfd1a2f570f2209f5de476ad3c9ea19729996e479bd5ad215.png" title=" When i click on filter options button" width="1931"/>
+                <img src="b3a8961f1ab87796eaed62e55054797fd5a73d74e17acbe38267f8031f6e11e2.png" title=" When i click on filter options button" width="1931"/>
+                <img src="da58d2f0285d6161e6cc88bdab6091a004cd1f8d2e3d377755807d6ffe0c40e9.png" title=" When i click on filter options button (completed)" width="1931"/>
+                <img src="da58d2f0285d6161e6cc88bdab6091a004cd1f8d2e3d377755807d6ffe0c40e9.png" title=" When i set the requisition ID filter using the saved value" width="1931"/>
+                <img src="9ce9745c9565952db8f5f013bea07efef80a7ca4d0b238911607da30b8875505.png" title=" When i set the requisition ID filter using the saved value (completed)" width="1931"/>
+                <img src="9ce9745c9565952db8f5f013bea07efef80a7ca4d0b238911607da30b8875505.png" title=" When i click on update screen button" width="1931"/>
+                <img src="b3a8961f1ab87796eaed62e55054797fd5a73d74e17acbe38267f8031f6e11e2.png" title=" When i click on update screen button" width="1931"/>
+                <img src="8eb0fffd79ffcb9046fcffc53c1e63ff7735d1a6bd1d69daa578ce6effb86896.png" title=" When i click on update screen button (completed)" width="1931"/>
+                <img src="8eb0fffd79ffcb9046fcffc53c1e63ff7735d1a6bd1d69daa578ce6effb86896.png" title=" When i set the job requisition filter to all job requisitions" width="1931"/>
+                <img src="8eb0fffd79ffcb9046fcffc53c1e63ff7735d1a6bd1d69daa578ce6effb86896.png" title=" When i set the job requisition filter to all job requisitions (completed)" width="1931"/>
+                <img src="8eb0fffd79ffcb9046fcffc53c1e63ff7735d1a6bd1d69daa578ce6effb86896.png" title=" When i click the requested job position from job requisitions table" width="1931"/>
+                <img src="8eb0fffd79ffcb9046fcffc53c1e63ff7735d1a6bd1d69daa578ce6effb86896.png" title=" When i click the requested job position from job requisitions table (completed)" width="1931"/>
+                <img src="be62e6163f0e600cdfdad532a8e09be6ac53abcc8d8a0d78dbc52b6f7deef951.png" title=" After test processing" width="1931"/>
+                <img src="be62e6163f0e600cdfdad532a8e09be6ac53abcc8d8a0d78dbc52b6f7deef951.png" title=" When i expand the error message details if present" width="1931"/>
+                <img src="be62e6163f0e600cdfdad532a8e09be6ac53abcc8d8a0d78dbc52b6f7deef951.png" title=" When i expand the error message details if present (completed)" width="1931"/>
+                <img src="be62e6163f0e600cdfdad532a8e09be6ac53abcc8d8a0d78dbc52b6f7deef951.png" title=" After test processing (completed): <span class='error-color'>ERROR</span>" width="1931"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.1.6</span>
+</div>
+</body>
+</html>
