@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="org.icrc.hrspace.RCM.JobRequisitionCreationICRCForm" skipped="0" tests="1" time="128.22" timestamp="2024-04-16 10:19:27"><testcase classname="org.icrc.hrspace.RCM.JobRequisitionCreationICRCForm" name="Complete ICRC job requisition creation and approval"><error message="Expected condition failed: waiting for presence of null (tried for 15 second(s) with 100 milliseconds interval)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'PCS13944', ip: '192.168.254.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'&#10;Driver info: net.thucydides.core.webdriver.WebDriverFacade" type="org.openqa.selenium.TimeoutException">Expected condition failed: waiting for presence of null (tried for 15 second(s) with 100 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PCS13944', ip: '192.168.254.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: net.thucydides.core.webdriver.WebDriverFacade</error><system-err>Expected condition failed: waiting for presence of null (tried for 15 second(s) with 100 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PCS13944', ip: '192.168.254.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: net.thucydides.core.webdriver.WebDriverFacade&#13;
+utils.ExplicitWait.explicitlyWaitForPresenceOfElement(ExplicitWait.java:119)&#13;
+pages.GenericPage.clickElement(GenericPage.java:194)&#13;
+pages.RecruitingPage.clickJobTitleFromJobRequisitionsTable(RecruitingPage.java:56)&#13;
+steps.RecruitingSteps.when_I_click_the_requested_Job_position_from_Job_Requisitions_table(RecruitingSteps.java:36)&#13;
+steps.RCM.ICRC.JobRequisitionCreationSteps.when_the_Recruiter_Edits_and_Reviews_Job_Requisition_Details_fields(JobRequisitionCreationSteps.java:1055)&#13;
+org.icrc.hrspace.RCM.JobRequisitionCreationICRCForm.completeICRCJobRequisitionCreationAndApproval(JobRequisitionCreationICRCForm.java:918)&#13;
+</system-err></testcase></testsuite>
